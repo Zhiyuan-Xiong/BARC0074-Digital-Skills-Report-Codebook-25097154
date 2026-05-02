@@ -6,6 +6,14 @@ This repository documents **Part 1: Data Collection, Analysis, and Fusion**, whi
 
 ---
 
+## Access to Full Project Files
+
+Full project materials, including Blender files, Processing scripts, datasets, and supporting documents, are available via OneDrive:
+
+https://liveuclac-my.sharepoint.com/:f:/r/personal/ucbvz94_ucl_ac_uk/Documents/Zhiyuan%20Xiong-25097154-Data-Driven%20Design%20Workflows?csf=1&web=1&e=oJg0Ew
+
+---
+
 ## Project Structure
 
 The overall workflow is organised into three stages:
@@ -14,7 +22,7 @@ The overall workflow is organised into three stages:
 2. Spatial Generation (Blender + Python)  
 3. Real-Time Interaction (Processing)  
 
-This repository focuses on the first stage.
+This repository focuses on the first stage, while subsequent spatial modelling and interactive visualisation are developed using Blender and Processing.
 
 ---
 
