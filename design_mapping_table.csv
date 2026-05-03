@@ -1,0 +1,9 @@
+data_variable,mapping_rule,design_effect
+magnitude_norm,object_scale = 1 + magnitude_norm * 4,Controls building size or shake amplitude
+depth_norm,z_offset = -depth_norm,Pushes objects deeper into the ground plane
+emotion_intensity,noise_strength = emotion_intensity,Controls terrain fracture and displacement intensity
+emotion_label,"panic -> higher rotation, calm -> smoother motion, fear -> stronger cracks, chaos -> denser debris",Switches animation behaviour based on sentiment
+cluster_id,material_index = cluster_id,Changes material palette or asset family
+image_density_signal,debris_density = image_density_signal,Increases fragment density for positive slum tiles
+city_code,city_code selects district-specific asset variations,Switches between Buenos Aires and Cordoba scene presets
+"x,y,z","scene_position = normalized longitude, latitude, and depth",Places fragments in a coherent spatial field
