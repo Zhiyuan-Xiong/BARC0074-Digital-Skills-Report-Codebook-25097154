@@ -10,7 +10,7 @@ This repository documents **Part 1: Data Collection, Analysis, and Fusion**, whi
 
 Full project materials, including Blender files, Processing scripts, datasets, and supporting documents, are available via OneDrive:
 
-https://liveuclac-my.sharepoint.com/:f:/r/personal/ucbvz94_ucl_ac_uk/Documents/Zhiyuan%20Xiong-25097154-Data-Driven%20Design%20Workflows?csf=1&web=1&e=oJg0Ew
+https://liveuclac-my.sharepoint.com/:f:/g/personal/ucbvz94_ucl_ac_uk/IgBhQGdm-1IfSqVe3db81iSOASuGqH7bbghzayAqKxJ76Cw?e=2NrSCx
 
 ---
 
