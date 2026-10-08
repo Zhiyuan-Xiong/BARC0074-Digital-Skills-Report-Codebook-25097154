@@ -1,0 +1,7 @@
+.godot/
+node_modules/
+.cache/
+.env*
+*.log
+__pycache__/
+*.pyc

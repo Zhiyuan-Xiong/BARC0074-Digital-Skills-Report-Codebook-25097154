@@ -1,0 +1,99 @@
+{
+  "slug": "earthquake",
+  "title": {
+    "zh": "地震：数据转译",
+    "en": "Earthquake: Data into Space"
+  },
+  "subtitle": {
+    "zh": "Jupyter × Python × Blender × Processing 协同设计",
+    "en": "A design workflow connecting Jupyter, Python, Blender, and Processing"
+  },
+  "description": {
+    "zh": "以 Python 连接图像、文本与地震记录，将多源数据转化为空间生成规则和动态行为。",
+    "en": "Python connects images, text, and seismic records, translating multimodal data into spatial generation rules and dynamic behaviour."
+  },
+  "categories": [
+    "3d",
+    "installation"
+  ],
+  "status": "published",
+  "kind": {
+    "zh": "Bartlett School 设计项目 · 数据驱动设计",
+    "en": "Bartlett School design project · Data-driven design"
+  },
+  "year": "2025–26",
+  "cover": "earthquake-cover",
+  "background": "earthquake-cover",
+  "featured": true,
+  "coverAlt": {
+    "zh": "深色空间中数据生成的建筑碎片、地表裂隙与发光震中波纹。",
+    "en": "Data-generated architectural fragments, ground fractures, and luminous epicentral waves in a dark space."
+  },
+  "role": {
+    "zh": "Python 数据处理、参数映射与空间可视化",
+    "en": "Python data processing, design mappings, and spatial visualisation"
+  },
+  "stage": {
+    "zh": "多源分析、程序建模与实时可视化",
+    "en": "Multimodal analysis, procedural modelling, and real-time visualisation"
+  },
+  "deliverables": {
+    "zh": "Jupyter 分析、特征与聚类图、数据映射 CSV、Blender 生成模型与 Processing 动态反馈",
+    "en": "Jupyter analyses, feature and cluster plots, mapping CSV, Blender-generated models, and Processing feedback"
+  },
+  "overview": {
+    "zh": "以地震为主题，将图像中的视觉特征、文本中的叙事信号与地球物理记录转化为可计算的设计变量。在 Jupyter 中完成采集、清洗、分析与融合，再用 Python 将这些变量映射为 Blender 的建筑碎片、地表裂隙与动态场景，最终在 Processing 中转化为粒子、波纹与实时反馈。",
+    "en": "This earthquake study turns visual features, narrative signals, and geophysical records into computable design variables. Collection, cleaning, analysis, and fusion in Jupyter lead to Python-driven architectural fragments, ground fractures, and animated scenes in Blender, followed by particles, waves, and real-time feedback in Processing."
+  },
+  "sections": [
+    {
+      "id": "data-workflow",
+      "title": {
+        "zh": "从数据到设计的工作流",
+        "en": "From data to design"
+      }
+    },
+    {
+      "id": "image-analysis",
+      "title": {
+        "zh": "图像采集与视觉特征",
+        "en": "Images and visual features"
+      }
+    },
+    {
+      "id": "text-analysis",
+      "title": {
+        "zh": "文本语义与叙事信号",
+        "en": "Text and narrative signals"
+      }
+    },
+    {
+      "id": "fusion-analysis",
+      "title": {
+        "zh": "地震记录与多源融合",
+        "en": "Seismic records and data fusion"
+      }
+    },
+    {
+      "id": "design-mapping",
+      "title": {
+        "zh": "Python 数据转译规则",
+        "en": "Python design mappings"
+      }
+    },
+    {
+      "id": "spatial-generation",
+      "title": {
+        "zh": "数据驱动的空间生成",
+        "en": "Data-driven spatial generation"
+      }
+    },
+    {
+      "id": "realtime",
+      "title": {
+        "zh": "从空间到实时行为",
+        "en": "From space to live behaviour"
+      }
+    }
+  ]
+}

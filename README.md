@@ -1,153 +1,69 @@
-# Earthquake Data-Driven Spatial System
+# 地震：数据转译
 
-This project explores the translation of earthquake-related data into spatial and interactive systems through a multi-modal computational workflow. By combining image-based analysis, textual interpretation, and geophysical data, the project establishes a data-driven design process that moves from data collection and fusion to spatial generation and real-time interaction.
+CLIP、文本向量与多源数据融合驱动空间生成。
 
-This repository documents **Part 1: Data Collection, Analysis, and Fusion**, which forms the foundation for subsequent spatial and interactive stages.
+**[完整设计案例](https://xiongzhiyuan-portfolio.pages.dev/zh/work/earthquake/) · [求职作品总入口](https://github.com/Zhiyuan-Xiong/xiongzhiyuan-portfolio)**
 
----
+<p align="center"><img src="portfolio/images/earthquake-cover-1280.webp" alt="地震：数据转译" width="100%"></p>
 
-## Access to Full Project Files
+## 项目目标
 
-Full project materials, including Blender files, Processing scripts, datasets, and supporting documents, are available via OneDrive:
+以地震为主题，将图像中的视觉特征、文本中的叙事信号与地球物理记录转化为可计算的设计变量。在 Jupyter 中完成采集、清洗、分析与融合，再用 Python 将这些变量映射为 Blender 的建筑碎片、地表裂隙与动态场景，最终在 Processing 中转化为粒子、波纹与实时反馈。
 
-https://liveuclac-my.sharepoint.com/:f:/g/personal/ucbvz94_ucl_ac_uk/IgBhQGdm-1IfSqVe3db81iSOASuGqH7bbghzayAqKxJ76Cw?e=2NrSCx
+## 我的贡献
 
----
+Python 数据处理、参数映射与空间可视化
 
-## Project Structure
+完成阶段：多源分析、程序建模与实时可视化
 
-The overall workflow is organised into three stages:
+现有产出：Jupyter 分析、特征与聚类图、数据映射 CSV、Blender 生成模型与 Processing 动态反馈
 
-1. Data Collection and Analysis (Jupyter Notebooks)  
-2. Spatial Generation (Blender + Python)  
-3. Real-Time Interaction (Processing)  
+## AI 与制作工作流
 
-This repository focuses on the first stage, while subsequent spatial modelling and interactive visualisation are developed using Blender and Processing.
+### 1. 多源采集
 
----
+结合 USGS 地震记录、地震相关图像和新闻文本，建立可追溯的数据输入。
 
-## Jupyter Notebooks
+### 2. AI 与机器学习表示
 
-### 1. earthquake photos scraping.ipynb
+融合 Notebook 包含 CLIP 图像向量、SentenceTransformer 文本向量，以及 TF-IDF、K-means、PCA 和标准化。代码保留对应模型与数据处理过程。
 
-This notebook is responsible for collecting and analysing earthquake-related images.
+### 3. 跨模态融合
 
-**Function:**
-- Scrapes images using earthquake-related keywords  
-- Cleans and filters the dataset  
-- Extracts visual features including brightness, contrast, edge density, and a damage proxy  
-- Applies clustering (K-means) to identify visual patterns  
+对图像、文本与地球物理变量进行对齐、归一化和融合，生成 final_fusion_data.csv 与设计映射表。
 
-**Output:**
-- Image dataset (stored locally)  
-- `image_features.csv`  
+### 4. 从数据到空间
 
-**Purpose:**
-To translate visual representations of earthquake damage into measurable parameters for spatial use.
+通过 Python 映射空间生成参数，在 Blender 与 Processing 中形成空间结构和动态反馈。此仓库中的 Notebook 记录第一阶段，作品集展示后续空间与交互成果。
 
----
+### 5. 人工判断与证据
 
-### 2. earthquake news scraping.ipynb
+人工定义变量含义、映射规则和视觉结果。原研究代码、CSV 输出、案例图与交互影像分层保存，不把预训练模型推理表述为自行训练模型。
 
-This notebook collects and processes earthquake-related textual data.
+## 仓库内容
 
-**Function:**
-- Scrapes news headlines and descriptions  
-- Performs keyword frequency analysis  
-- Applies sentiment analysis  
-- Uses clustering to group semantic patterns  
+| 内容 | 入口 |
+| --- | --- |
+| 图像采集与视觉特征 | [earthquake photos scraping.ipynb](earthquake%20photos%20scraping.ipynb) |
+| 新闻文本与语义处理 | [earthquake news scraping.ipynb](earthquake%20news%20scraping.ipynb) |
+| 多模态融合工作流 | [earthquake_disaster_fusion_workflow.ipynb](earthquake_disaster_fusion_workflow.ipynb) |
+| 融合数据 | [final_fusion_data.csv](final_fusion_data.csv) |
+| 设计映射 | [design_mapping_table.csv](design_mapping_table.csv) |
+| 案例与空间视觉资料 | [portfolio/](portfolio/) |
 
-**Output:**
-- Processed text dataset  
-- `blender_input.csv`  
+## 阅读顺序
 
-**Purpose:**
-To convert narrative and emotional information into structured variables that can influence spatial behaviour.
+1. 阅读图像与新闻采集 Notebook，理解各类特征和处理方式。
+2. 阅读融合 Notebook，查看对齐、标准化、向量表示和空间指标的计算。
+3. 对照 CSV 输出与设计映射表。
+4. 在在线案例中查看 Blender 空间生成与 Processing 动态反馈。
 
----
+## 数据来源与范围
 
-### 3. earthquake_disaster_fusion_workflow.ipynb
+地球物理数据来源为 [USGS 地震数据集](https://www.kaggle.com/datasets/usgs/earthquake-database)。图像、新闻与融合数据的来源和过程保留在原 Notebook 与代码中。模型使用预训练表示，具体配置以代码为准。
 
-This notebook integrates multiple datasets into a unified structure.
+当前研究仓库主要记录数据采集、分析与融合阶段；后续原生工程仍沿用原项目的 [完整材料入口](https://liveuclac-my.sharepoint.com/:f:/g/personal/ucbvz94_ucl_ac_uk/IgBhQGdm-1IfSqVe3db81iSOASuGqH7bbghzayAqKxJ76Cw?e=2NrSCx)。
 
-**Input:**
-- Image features (from photo analysis)  
-- Textual data (from news analysis)  
-- Geophysical earthquake dataset  
+## 署名与使用
 
-**Function:**
-- Normalises and aligns datasets  
-- Computes combined indicators such as destruction index, fragmentation, and density signals  
-- Prepares data for spatial mapping and downstream use  
-
-**Output:**
-- `final_fusion_data.csv`  
-
-**Purpose:**
-To construct a multi-modal dataset that directly drives spatial generation in later stages.
-
----
-
-## Data Sources and Ownership
-
-### External Dataset (Geophysical Data Only)
-
-The geophysical earthquake dataset is the **only dataset sourced from an external platform**:
-
-https://www.kaggle.com/datasets/usgs/earthquake-database
-
-This dataset is provided by the United States Geological Survey (USGS) and contains records of earthquakes with magnitude 5.5 and above, including:
-
-- Date and time  
-- Latitude and longitude  
-- Depth  
-- Magnitude  
-
-This dataset serves as the physical foundation of the project.
-
----
-
-### Project-Generated Data
-
-All other datasets in this repository are **self-generated through the project's workflow**, including:
-
-- Scraped earthquake image dataset  
-- Image feature extraction (`image_features.csv`)  
-- Processed news data (`blender_input.csv`)  
-- Final fused dataset (`final_fusion_data.csv`)  
-
-These datasets are produced through custom scripts and analysis pipelines developed as part of this project.
-
----
-
-## Included Files
-
-The repository includes both raw and processed data to ensure reproducibility:
-
-- `database.csv` — original geophysical earthquake dataset (external source)  
-- `image_features.csv` — extracted visual features (generated)  
-- `blender_input.csv` — processed textual data (generated)  
-- `final_fusion_data.csv` — fused multi-modal dataset (generated)  
-- Scraped image dataset (generated)  
-
----
-
-## Project Objective
-
-The project shifts from conventional data representation towards a generative system in which data actively drives spatial and behavioural outcomes.
-
-By integrating multiple data domains, the workflow demonstrates how:
-
-- Geophysical data informs spatial structure  
-- Image data influences form and surface complexity  
-- Text data introduces semantic and affective variation  
-
----
-
-## Summary
-
-The workflow can be understood as:
-
-data → analysis → fusion → spatial generation → interaction
-
-Rather than producing static representations, the project constructs a system in which spatial form and behaviour emerge from relationships within the data.
+作品素材用于个人设计展示。协作项目以案例中的职责说明为准；字体、引擎和第三方资料遵循各自授权。未经许可，不将作品素材用于转载或商业用途。
