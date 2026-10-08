@@ -40,6 +40,10 @@ Python 数据处理、参数映射与空间可视化
 
 人工定义变量含义、映射规则和视觉结果。原研究代码、CSV 输出、案例图与交互影像分层保存，不把预训练模型推理表述为自行训练模型。
 
+## 从数据到空间的证据
+
+<table><tr><td width="50%"><img src="portfolio/media/earthquake/fusion-clusters.webp" alt="多源数据融合与聚类" width="100%"><br>多源数据融合与聚类</td><td width="50%"><img src="portfolio/media/earthquake/spatial-detail.webp" alt="数据转译后的三维空间" width="100%"><br>数据转译后的空间成果</td></tr></table>
+
 ## 仓库内容
 
 | 内容 | 入口 |
